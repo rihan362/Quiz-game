@@ -1,0 +1,63 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #ff69b4, #000000); /* Pink to Black radial gradient */
+}
+
+.App {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Styles for the question and choices */
+.question {
+  margin-bottom: 20px;
+}
+
+.choices-container {
+  display: flex;
+  flex-direction: column; /* Ensure vertical stacking */
+  gap: 10px; /* Adds space between buttons */
+}
+
+.choice-btn {
+  background-color: #ff69b4; /* Pink background for buttons */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-align: left;
+  width: 100%; /* Full width */
+}
+
+.choice-btn:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+}
+
+.choice-btn:focus {
+  outline: none;
+  background-color: #ff1493; /* Darker pink on focus */
+}
+
+/* Result paragraph */
+p {
+  font-size: 18px;
+  margin-top: 20px;
+}
